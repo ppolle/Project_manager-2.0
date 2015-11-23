@@ -44,7 +44,7 @@ class AuthController extends Controller
         return Redirect::to('home');
     }
 
-   
+
     private function findOrCreateUser($githubUser)
     {
         if ($authUser = User::where('github_id', $githubUser->id)->first()) {
