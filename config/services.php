@@ -35,8 +35,8 @@ return [
         'secret' => env('STRIPE_SECRET'),
     ],
     'github' => [
-        'client_id' => env('3279408a4074a92a470f'),
-        'client_secret' => env('c0081e183c0b20142a43151e6122999524d04e22'),
+        'client_id' => getenv('GITHUB_CLIENT_ID'),
+        'client_secret' => env('GITHUB_CLIENT_SECRET'),
         'redirect' => env('http://localhost/blog/public/dash'),
     ],
 ];
